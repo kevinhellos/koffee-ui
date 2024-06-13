@@ -4,6 +4,7 @@ import Components from "./pages/components/Components";
 import About from "./pages/about/About";
 import Release from "./pages/release/Release";
 import Navbar from "./Navbar";
+import NotFound from "./pages/not-found/NotFound";
 
 const App = () => {
 
@@ -29,6 +30,10 @@ const App = () => {
           
           <Route exact path={"/about"}>
             <About />
+          </Route>
+
+          <Route exact path={"*"}>
+            <NotFound />
           </Route>
 
         </Switch>
