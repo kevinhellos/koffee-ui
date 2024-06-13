@@ -1,0 +1,186 @@
+/* 
+ * Koffee UI
+ * Version: 0.5
+ */
+
+/* All colours MUST be strictly 
+ * following root colours 
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --border: #e1e1e1;
+    --default: #f6f6f6;
+    --danger: #c23232;
+    --black: #0d0d0d;
+    --white: #fff;
+    --bs: rgba(99, 99, 99, 0.08) 0px 2px 8px 0px;
+
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Inter Tight", sans-serif !important;
+    overflow-x: hidden;
+}
+
+/* Default */
+/* Add more as required */
+header, footer, aside, nav, ul, ol, li, a, p, div, span, label, input {
+    font-size: .9rem;
+    letter-spacing: .03rem;
+}
+ 
+/* Buttons */
+.btn {
+    background-color: #fff;
+    border: none;
+    padding: .82rem 1.25rem;
+    cursor: pointer !important;
+    border-radius: .395rem;
+    font-weight: 300;
+    letter-spacing: .03rem;
+    transition: .1s ease;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.btn-plain {
+    color: var(--black);
+    background-color: var(--default);
+}
+.btn-plain:hover {
+    background-color: var(--default);
+}
+.btn-plain:active {
+    background-color: #f0f0f0;
+}
+.btn-default {
+    border: 1px solid var(--border);
+    background-color: var(--white);
+    transition: .25s ease;
+    color: var(--black);
+}
+.btn-default:hover {
+    background-color: #e9e9e9;
+}
+.btn-default:active {
+    background-color: #e0e0e0;
+}
+.btn-black {
+    background-color: var(--black);
+    color: var(--white);
+}
+.btn-black:hover {
+    opacity: 0.85;
+}
+.btn-black:active {
+    opacity: 1;
+}
+
+/* Utilities */
+.rounded-max {
+    border-radius: 10rem;
+}
+/* Underline style in links are removed by default */
+a {
+    text-decoration: none;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Chip */
+.chip{
+    background-color: transparent;
+    border-radius: 10rem;
+    width: fit-content;
+    padding: .3rem .95rem;
+    font-size: .85rem;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.chip-default {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+}
+.chip-danger {
+    border: 1px solid var(--danger);
+    color: var(--danger);
+}
+.chip-black {
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Bar */
+.bar {
+    border: 1px solid var(--border);
+    padding: 1rem;
+    border-radius: .395rem;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bar-default {
+    background-color: var(--white);
+    color: var(--black);
+}
+.bar-danger {
+    border: 1px solid var(--danger);
+    color: var(--danger);
+}
+.bar-black {
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Input */
+.input{
+    padding: .82rem 1.25rem;
+    border-radius: .395rem;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input::placeholder{
+    color: var(--border);
+}
+.input-default{
+    border: 1px solid var(--border);
+}
+.input-danger{
+    border: 1px solid var(--danger);
+    color: var(--danger);
+}
+.input-clear{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0px;
+}
+
+/* Popper */
+.popper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.popper-content {
+  border: 1px solid var(--border);
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  padding: .12rem 1.15rem;
+  /* z-index: 1; */
+  text-align: left;
+  border-radius: .395rem;
+}
+.popper:hover .popper-content {
+  display: block;
+  cursor: pointer;
+}
