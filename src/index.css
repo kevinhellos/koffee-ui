@@ -123,7 +123,7 @@ body {
   height: 200px;
   border-radius: .375rem;
   cursor: pointer;
-  overflow: auto;
+  /* overflow: auto; */
 }
 .component-preview-card:hover {
   background-color: #fcfcfc;
