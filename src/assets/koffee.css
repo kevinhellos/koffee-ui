@@ -3,14 +3,14 @@
  * Version: 0.5.1
  */
 
-/* All colours MUST be strictly 
- * following root colours 
+/* 
+ * All colours MUST be strictly following root colours 
+ * Default font used: Inter Tight
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-
     /* Root colours */
     --border: #e1e1e1;
     --default: #f6f6f6;
@@ -23,7 +23,6 @@
 
     /* Border radius */
     --radiusdefault: .395rem;
-
 }
 
 body {
@@ -32,9 +31,10 @@ body {
     overflow-x: hidden;
 }
 
-/* Default */
+/* Default font size for tags .9rem */
 /* Add more as required */
-header, footer, aside, nav, ul, ol, li, a, p, div, span, label, input {
+header, footer, aside, nav, ul, ol, li, a, 
+p, div, span, label, input {
     font-size: .9rem;
     letter-spacing: .03rem;
 }
@@ -52,6 +52,7 @@ header, footer, aside, nav, ul, ol, li, a, p, div, span, label, input {
     margin-left: 5px;
     margin-right: 5px;
     font-size: .85rem !important;
+    /* box-shadow: var(--bs) !important; */
 }
 .btn-plain {
     color: var(--black);
@@ -84,6 +85,17 @@ header, footer, aside, nav, ul, ol, li, a, p, div, span, label, input {
 }
 .btn-black:active {
     opacity: 1;
+}
+
+/* Texts */
+.text-black {
+    color: var(--black);
+}
+.text-secondary {
+    color: var(--border);
+}
+.text-danger {
+    color: var(--danger);
 }
 
 /* Utilities */
@@ -135,6 +147,8 @@ a {
     font-size: .85rem;
     margin-right: 5px;
     margin-left: 5px;
+    font-weight: 400;
+    box-shadow: var(--bs) !important;
 }
 .chip-default {
     background-color: var(--white);
@@ -183,6 +197,7 @@ a {
     /* display: block;
     margin-left: auto;
     margin-right: auto; */
+    box-shadow: var(--bs) !important;
 }
 input::placeholder{
     color: var(--border);
@@ -251,15 +266,15 @@ input::placeholder{
 /* File */
 .file {
     border: 1px dashed #d5d5d5;
-    padding: 10px;
-    max-width: 150px;
+    padding: 12px 0px;
+    width: 130px;
     box-shadow: var(--bs) !important;
     cursor: pointer !important;
     border-radius: var(--radiusdefault);
 }
 .file input{
-	width: 0.1px;
-	height: 0.1px;
+	/* width: 0.1px;
+	height: 0.1px; */
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
@@ -269,6 +284,8 @@ input::placeholder{
 .file-prompt {
     font-weight: 400;
     cursor: pointer !important;
+    /* border: 1px solid red; */
+    padding: 10px 25px;
 }
 .file:hover {
     cursor: pointer !important;
@@ -332,4 +349,44 @@ dialog {
     font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 10px;
+}
+
+/* Pagination */
+.pagination .btn{
+    margin: 0px !important;
+    padding: 8px 11px;
+    border-radius: 0px;
+    border-right: .35px solid var(--border);
+    font-size: .83rem !important;
+}
+.pagination .btn:first-child{
+    border-top-left-radius: var(--radiusdefault);
+    border-bottom-left-radius: var(--radiusdefault);
+}
+.pagination .btn:last-child{
+    border-top-right-radius: var(--radiusdefault);
+    border-bottom-right-radius: var(--radiusdefault);
+    border-right: 1px solid var(--border);
+}
+
+/* Table */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: var(--bs);
+}
+.table tr, th {
+    border-top: 1px solid var(--border);
+    font-weight: 600;
+}
+.table tr, td {
+    font-weight: 400;
+}
+.table td, th {
+  /* border: 1px solid var(--border); */
+  /* text-align: left; */
+  padding: 8px;
+}
+.table tr:nth-child(even) {
+  background-color: var(--default);
 }

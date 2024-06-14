@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    
-    /* Box background */
-    background-color: #fff;
-    background-image:  linear-gradient(#efefef 1.1px, transparent 1.1px), linear-gradient(to right, #f3f3f3 1.1px, #fff 1.1px);
-    background-size: 150px 150px;
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+  /* Box background */
+  background-color: #fff;
+  background-image:  linear-gradient(#efefef 1.1px, transparent 1.1px), linear-gradient(to right, #f3f3f3 1.1px, #fff 1.1px);
+  background-size: 150px 150px;
 }
 
 /* Navbar */
@@ -66,32 +66,32 @@ body {
 
 /* Hero */
 .hero {
-    margin-top: 20vh;
-    text-align: center !important;
+  margin-top: 20vh;
+  text-align: center !important;
 }
 .hero-main-text {
-    font-weight: 600 !important;
-    letter-spacing: .03rem;
-    font-size: 2.75rem;
-    margin-top: 10px;
-    margin-bottom: 0px !important;
+  font-weight: 600 !important;
+  letter-spacing: .03rem;
+  font-size: 2.75rem;
+  margin-top: 10px;
+  margin-bottom: 0px !important;
 }
 @media only screen and (max-width: 600px) {
-    .hero-main-text {
-      font-size: 2.15rem;
-    }
+  .hero-main-text {
+    font-size: 2.15rem;
+  }
 }
 .hero-sub-text {
-    margin-top: 10px;
-    font-size: 1.05rem;
-    letter-spacing: .03rem;
-    line-height: 1.5;
+  margin-top: 10px;
+  font-size: 1.05rem;
+  letter-spacing: .03rem;
+  line-height: 1.5;
 }
 .hero-cta {
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 350px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
 }
 
 /* workarea */
@@ -110,6 +110,11 @@ body {
   display: grid;
   gap: 1rem;
 }
+.component-preview-card-title {
+  font-size: 1.25rem !important;
+  font-weight: 500;
+  margin-bottom: 0px !important;
+}
 .component-preview-card {
   border: 1px solid #e0e0e0 !important;
   background-color: #fff;
@@ -118,6 +123,7 @@ body {
   height: 200px;
   border-radius: .375rem;
   cursor: pointer;
+  overflow: auto;
 }
 .component-preview-card:hover {
   background-color: #fcfcfc;
