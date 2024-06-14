@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <nav className={`topnav ${navbarIsOpen ? "responsive" : ""}`}>
           <Link className="nav-brand" to="/">
-            koffee ui
+            koffee ui 
           </Link>
 
           <Link className="nav-link" to="/components">

@@ -1,6 +1,6 @@
 /* 
  * Koffee UI
- * Version: 0.5
+ * Version: 0.51
  */
 
 /* All colours MUST be strictly 
@@ -10,12 +10,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+
+    /* Root colours */
     --border: #e1e1e1;
     --default: #f6f6f6;
     --danger: #c23232;
     --black: #0d0d0d;
     --white: #fff;
+
+    /* Box shadows */
     --bs: rgba(99, 99, 99, 0.08) 0px 2px 8px 0px;
+
+    /* Border radius */
+    --radiusdefault: .395rem;
 
 }
 
@@ -36,14 +43,15 @@ header, footer, aside, nav, ul, ol, li, a, p, div, span, label, input {
 .btn {
     background-color: #fff;
     border: none;
-    padding: .82rem 1.25rem;
+    padding: .77rem 1.22rem;
     cursor: pointer !important;
-    border-radius: .395rem;
+    border-radius: var(--radiusdefault);
     font-weight: 300;
     letter-spacing: .03rem;
     transition: .1s ease;
     margin-left: 5px;
     margin-right: 5px;
+    font-size: .85rem !important;
 }
 .btn-plain {
     color: var(--black);
@@ -79,6 +87,7 @@ header, footer, aside, nav, ul, ol, li, a, p, div, span, label, input {
 }
 
 /* Utilities */
+/* Rounded */
 .rounded-max {
     border-radius: 10rem;
 }
@@ -86,8 +95,35 @@ header, footer, aside, nav, ul, ol, li, a, p, div, span, label, input {
 a {
     text-decoration: none;
 }
+/* Cursor */
 .cursor-pointer {
     cursor: pointer;
+}
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+/* Floats */
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+/* Text */
+.text-center {
+    text-align: center;
+}
+.mx-auto{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+/* Display */
+.flex {
+    display: flex !important;
+}
+.block {
+    display: block !important;
 }
 
 /* Chip */
@@ -118,7 +154,7 @@ a {
 .bar {
     border: 1px solid var(--border);
     padding: 1rem;
-    border-radius: .395rem;
+    border-radius: var(--radiusdefault);
     text-align: left;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -138,12 +174,15 @@ a {
 }
 
 /* Input */
-.input{
+.input {
     padding: .82rem 1.25rem;
-    border-radius: .395rem;
+    border-radius: var(--radiusdefault);
     text-align: left;
     margin-top: 5px;
     margin-bottom: 5px;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
 }
 input::placeholder{
     color: var(--border);
@@ -163,6 +202,52 @@ input::placeholder{
     border-radius: 0px;
 }
 
+/* Radio */
+.radio div {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: .395rem !important;
+}
+.radio input[type="radio"] {
+  /* clip: rect(0 0 0 0); */
+  /* clip-path: inset(100%); */
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  border-radius: .395rem !important;
+}
+.radio input[type="radio"]:checked + span {
+  border: 1px solid var(--black);
+  z-index: 1;
+  font-weight: 500;
+}
+.radio-label {
+    display: block !important;
+    min-width: 100px !important;
+    border-radius: .395rem !important;
+}
+.radio-label span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  padding: .77rem 1.22rem;
+  border: 1px solid var(--border);
+  color: var(--black);
+  transition: background-color .3s ease;
+  border-radius: .395rem !important;
+}
+
 /* Popper */
 .popper {
   position: relative;
@@ -172,15 +257,52 @@ input::placeholder{
 .popper-content {
   border: 1px solid var(--border);
   display: none;
-  position: absolute;
   background-color: #fff;
-  min-width: 160px;
   padding: .12rem 1.15rem;
   /* z-index: 1; */
   text-align: left;
-  border-radius: .395rem;
+  width: fit-content;
+  border-radius: var(--radiusdefault);
 }
 .popper:hover .popper-content {
   display: block;
   cursor: pointer;
+}
+
+/* Card */
+.card {
+    border: 1px solid var(--border);
+    border-radius: var(--radiusdefault);
+    padding: 1rem 1.25rem;
+    text-align: left;
+    overflow: auto;
+    box-shadow: var(--bs);
+}
+.card-title {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.card-action {
+    margin-top: 10px;
+}
+
+/* Dialog */
+::backdrop {
+    /* Background blur */
+    backdrop-filter: blur(2.5px);
+}
+dialog {
+    border: 1px solid var(--border) !important;
+    box-shadow: var(--bs);
+    border-radius: .575rem;
+    /* padding: 1rem 1.25rem; */
+    padding: 25px 35px !important;
+    text-align: left;
+    max-width: 350px;
+}
+.dialog-title {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }

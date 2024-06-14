@@ -30,6 +30,18 @@ const Release = () => {
 
                 <div className="bar bar-default" style={{padding: "10px 15px", marginTop: "15px"}}>
                     <div style={{marginTop: "10px"}}>
+                        <span className="chip chip-black">v 0.5.1</span>
+                    </div>
+                    <div style={{marginTop: "15px"}}>
+                        <small>Released on June 14 2024</small>
+                    </div>
+                    <p>
+                        Components added: card, dialog, radio
+                    </p>
+                </div>
+
+                <div className="bar bar-default" style={{padding: "10px 15px", marginTop: "15px"}}>
+                    <div style={{marginTop: "10px"}}>
                         <span className="chip chip-black">v 0.5</span>
                     </div>
                     <div style={{marginTop: "15px"}}>
@@ -39,6 +51,7 @@ const Release = () => {
                         Components added: buttton, chip, bar, input, popper
                     </p>
                 </div>
+
           </div>
 
         </div>
