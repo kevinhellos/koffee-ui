@@ -28,6 +28,16 @@ const Release = () => {
             <p>Available for downloads via npm</p>
           </div>
 
+          <div className="bar bar-default" style={{ padding: "10px 15px", marginTop: "15px" }}>
+            <div style={{ marginTop: "15px" }}>
+              <span className="chip chip-default">v 0.5.2</span>
+            </div>
+            <div style={{ marginTop: "15px" }}>
+              <small>(coming soon)</small>
+            </div>
+            <p>Navbar, responsive grids</p>
+          </div>
+
           <div
             className="bar bar-default"
             style={{ padding: "10px 15px", marginTop: "15px" }}
