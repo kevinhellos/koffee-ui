@@ -4,7 +4,7 @@ const Landing = () => {
   return (
     <>
       <div className="hero">
-        <span className="chip chip-default">Version 0.5</span>
+        <span className="chip chip-default">Version 0.5.1</span>
         <h1 className="hero-main-text">Minimalist class based UI library</h1>
         <p className="hero-sub-text">
           Lightweight UI framework designed to streamline development of modern web interfaces. <br />

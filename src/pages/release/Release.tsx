@@ -12,7 +12,7 @@ const Release = () => {
                 marginLeft: "auto",
                 marginRight:"auto",
                 display: "block",
-                width: "500px"
+                width: "400px"
             }}
           >
 
@@ -36,7 +36,7 @@ const Release = () => {
                         <small>Released on June 14 2024</small>
                     </div>
                     <p>
-                        Components added: card, dialog, radio
+                        Components added: card, dialog, radio, file input
                     </p>
                 </div>
 

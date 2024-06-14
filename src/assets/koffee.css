@@ -1,6 +1,6 @@
 /* 
  * Koffee UI
- * Version: 0.51
+ * Version: 0.5.1
  */
 
 /* All colours MUST be strictly 
@@ -46,7 +46,7 @@ header, footer, aside, nav, ul, ol, li, a, p, div, span, label, input {
     padding: .77rem 1.22rem;
     cursor: pointer !important;
     border-radius: var(--radiusdefault);
-    font-weight: 300;
+    font-weight: 300 !important;
     letter-spacing: .03rem;
     transition: .1s ease;
     margin-left: 5px;
@@ -246,6 +246,33 @@ input::placeholder{
   color: var(--black);
   transition: background-color .3s ease;
   border-radius: .395rem !important;
+}
+
+/* File */
+.file {
+    border: 1px dashed #d5d5d5;
+    padding: 10px;
+    max-width: 150px;
+    box-shadow: var(--bs) !important;
+    cursor: pointer !important;
+    border-radius: var(--radiusdefault);
+}
+.file input{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+    cursor: pointer !important;
+}
+.file-prompt {
+    font-weight: 400;
+    cursor: pointer !important;
+}
+.file:hover {
+    cursor: pointer !important;
+    background-color: var(--default);
 }
 
 /* Popper */

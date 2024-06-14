@@ -73,7 +73,7 @@ const Components = () => {
                 type="text"
                 className="input input-clear"
                 placeholder="Clear"
-                value={"Clear"}
+                defaultValue={"Clear"}
               />
             </div>
           </div>
@@ -83,25 +83,42 @@ const Components = () => {
             <div>Radio</div>
             <div style={{ marginTop: 20 }}>
 
-            <div className="radio">
-              <div>
-                <label className="radio-label">
-                  <input type="radio" name="radio" defaultChecked={true}/>
-                  <span>Option 1</span>
-                </label>
-                <label className="radio-label">
-                  <input type="radio" name="radio" />
-                  <span>Option 2</span>
-                </label>
-                <label className="radio-label">
-                  <input type="radio" name="radio" />
-                  <span>Option 3</span>
-                </label>
+              <div className="radio">
+                <div>
+                  <label className="radio-label">
+                    <input type="radio" name="radio" defaultChecked={true}/>
+                    <span>Option 1</span>
+                  </label>
+                  <label className="radio-label">
+                    <input type="radio" name="radio" />
+                    <span>Option 2</span>
+                  </label>
+                  <label className="radio-label">
+                    <input type="radio" name="radio" />
+                    <span>Option 3</span>
+                  </label>
+                </div>
               </div>
-            </div>
-
 
             </div>
+          </div>
+
+          {/* File upload */}
+          <div className="component-preview-card text-center">
+            <div>File upload</div>
+              <div style={{ marginTop: 70 }}>
+
+                <div className="file mx-auto">
+                  <label 
+                    htmlFor="file"
+                    className="file-prompt"
+                    >
+                    Choose a file
+                  </label>
+                  <input type="file" name="file" id="file"/>
+                </div>
+
+              </div>
           </div>
 
           {/* Popper */}
