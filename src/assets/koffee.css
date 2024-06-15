@@ -1,6 +1,6 @@
 /* 
  * Koffee UI
- * Version: 0.5.15
+ * Version: 0.5.2
  */
 
 /* 
@@ -37,9 +37,32 @@ body {
 /* Default font size for tags .9rem */
 /* Add more as required */
 header, footer, aside, nav, ul, ol, li, a, 
-p, div, span, label, input {
+p, div, span, label, input, select, textarea,
+label, section, code {
     font-size: .9rem;
     letter-spacing: .03rem;
+}
+
+/* Headings */
+h1, h1, h3, h4, h5, h6 {
+    /* Default font-weight is set to 500 */
+    font-weight: 500;
+}
+
+/* Container */
+.container {
+    /* 
+        IMPORTANT !!!
+        width: 100% is removed, as it will cause
+        content to overflow outside of screen viewport,
+        in x direction.
+    */
+    /* width: 100%; */
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 964px;
 }
  
 /* Buttons */
@@ -54,11 +77,12 @@ p, div, span, label, input {
     transition: .1s ease;
     margin-left: 5px;
     margin-right: 5px;
-    font-size: .85rem !important;
+    font-size: .85rem;
     /* box-shadow: var(--bs) !important; */
 }
 .btn-sm {
-    padding: .55rem .6rem;
+    font-size: .8rem;
+    padding: .55rem .75rem;
 }
 .btn-plain {
     color: var(--black);
@@ -93,6 +117,17 @@ p, div, span, label, input {
 .btn-black:active {
     opacity: 1;
 }
+/* 
+Usage: 
+    Applied to a tag with .btn class.
+    When an a is applied with a .btn class,
+    it has a light font by default. To ensure it
+    has the same look and feel to a real button, 
+    apply the .btn-font on a tag with the .btn class
+*/
+.btn-font {
+    font-weight: 400 !important;
+}
 
 /* Texts */
 .text-black {
@@ -115,6 +150,26 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* For something/ an element to look like a link */
+.link {
+    color: #245fdd;
+}
+.link:hover {
+    text-decoration: underline;
+}
+/* Only look like a link when it's hovered */
+.hover-link:hover {
+    color: #245fdd !important;
+    text-decoration: underline !important;
+}
+
+/* Shadow */
+/* The default shadow used for components */
+.shadow {
+    box-shadow: var(--bs);
+}
+
 /* Cursor */
 .cursor-pointer {
     cursor: pointer;
@@ -179,6 +234,10 @@ a {
     border: 1px solid var(--black);
     background-color: var(--black);
     color: var(--white);
+}
+.chip-sm {
+    font-size: .8rem !important;
+    padding: .15rem .75rem !important;
 }
 
 /* Bar */

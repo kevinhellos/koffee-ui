@@ -14,10 +14,10 @@ const Navbar = () => {
           <div className="popper">
           <span>Explore</span>
           <div className="popper-content" style={{padding: "3px 5px"}}>
-            <a href="/components" className="text-left">
+            <a href="/components" className="text-left hover-link">
               Components
             </a>
-            <a href="/utilities" className="text-left">
+            <a href="/utilities" className="text-left hover-link">
               Utilities
             </a>
           </div>
@@ -26,7 +26,7 @@ const Navbar = () => {
 
           <Link className="nav-link" to="/release">
             Release
-            <span className="chip chip-black">new</span>
+            <span className="chip chip-black chip-sm">new</span>
           </Link>
 
           <Link className="nav-link" to="/about">

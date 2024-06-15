@@ -36,6 +36,27 @@ const Utilities = () => {
           </table>
 
           <h3 style={{fontWeight: 500, marginTop: 50}}>
+            Container
+          </h3>
+          <div style={{marginLeft: "-5px", marginBottom: "20px"}}>
+            <a href="/sandbox/container" className="btn btn-black btn-sm btn-font">
+              View demo
+            </a>
+          </div>
+          <table className="table">
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+            </tr>
+            <tr className="text-center">
+              <td>.container</td>
+              <td>
+                A responsive container by default. Max at 964px
+              </td>
+            </tr>
+          </table>
+
+          <h3 style={{fontWeight: 500, marginTop: 50}}>
             Cursor
           </h3>
           <table className="table">

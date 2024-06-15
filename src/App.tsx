@@ -6,6 +6,7 @@ import Release from "./pages/release/Release";
 import Navbar from "./Navbar";
 import NotFound from "./pages/not-found/NotFound";
 import Utilities from "./pages/utilities/Utilities";
+import Container from "./pages/sandbox/Container";
 
 const App = () => {
 
@@ -35,6 +36,10 @@ const App = () => {
           
           <Route exact path={"/about"}>
             <About />
+          </Route>
+
+          <Route exact path={"/sandbox/container"}>
+            <Container />
           </Route>
 
           <Route exact path={"*"}>

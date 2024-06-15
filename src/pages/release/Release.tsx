@@ -18,24 +18,28 @@ const Release = () => {
             width: "400px",
           }}
         >
-          <div className="bar bar-default" style={{ padding: "10px 15px" }}>
-            <div style={{ marginTop: "10px" }}>
-              <span className="chip chip-default">v 1.0</span>
+
+          <div className="bar bar-default" style={{ padding: "10px 15px", marginTop: "15px" }}>
+            <div style={{ marginTop: "15px" }}>
+              <span className="chip chip-default">Future update</span>
             </div>
             <div style={{ marginTop: "15px" }}>
-              <small>(coming soon)</small>
+              <small>Coming soon</small>
             </div>
-            <p>Available for downloads via npm</p>
+            <p><code>koffee.js</code></p>
           </div>
 
           <div className="bar bar-default" style={{ padding: "10px 15px", marginTop: "15px" }}>
             <div style={{ marginTop: "15px" }}>
-              <span className="chip chip-default">v 0.5.2</span>
+              <span className="chip chip-black">v 0.5.2</span>
+            </div>
+            <div style={{ marginTop: "20px" }}>
+              <span className="chip chip-default chip-sm">Latest</span>
             </div>
             <div style={{ marginTop: "15px" }}>
-              <small>(coming soon)</small>
+              <small>Released on June 15 2024</small>
             </div>
-            <p>Navbar, responsive grids</p>
+            <p>Components added: responsive container, <a href="/utilities" className="link">utilities classes</a></p>
           </div>
 
           <div
@@ -44,6 +48,9 @@ const Release = () => {
           >
             <div style={{ marginTop: "10px" }}>
               <span className="chip chip-black">v 0.5.1</span>
+            </div>
+            <div style={{ marginTop: "20px" }}>
+              <span className="chip chip-danger chip-sm">Deprecated</span>
             </div>
             <div style={{ marginTop: "15px" }}>
               <small>Released on June 14 2024</small>
@@ -57,6 +64,9 @@ const Release = () => {
           >
             <div style={{ marginTop: "10px" }}>
               <span className="chip chip-black">v 0.5</span>
+            </div>
+            <div style={{ marginTop: "20px" }}>
+              <span className="chip chip-danger chip-sm">Deprecated</span>
             </div>
             <div style={{ marginTop: "15px" }}>
               <small>Released on June 14 2024</small>
