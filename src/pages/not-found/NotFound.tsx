@@ -10,7 +10,7 @@ const NotFound = () => {
         <p className="hero-sub-text" style={{marginBottom: "30px"}}>
             The page you've requsted could not be found
         </p>
-        <Link to="/" className="btn btn-default">
+        <Link to="/" className="btn btn-default btn-font">
             Back to Home
         </Link>
       </div>
