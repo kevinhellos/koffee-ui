@@ -1,13 +1,14 @@
 /* 
  * Koffee UI
  * Version: 0.5.2
+ * https://koffee.kevin.com.se
+ * https://github.com/kevinhellos/koffee-ui
  */
 
 /* 
  * All colours MUST be strictly following root colours 
  * Default font used: Inter Tight
  */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
