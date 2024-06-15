@@ -5,6 +5,7 @@ import About from "./pages/about/About";
 import Release from "./pages/release/Release";
 import Navbar from "./Navbar";
 import NotFound from "./pages/not-found/NotFound";
+import Utilities from "./pages/utilities/Utilities";
 
 const App = () => {
 
@@ -22,6 +23,10 @@ const App = () => {
 
           <Route exact path={"/components"}>
             <Components />
+          </Route>
+
+          <Route exact path={"/utilities"}>
+            <Utilities />
           </Route>
 
           <Route exact path={"/release"}>

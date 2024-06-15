@@ -10,32 +10,33 @@ body {
   background-color: #fff;
   background-image:  linear-gradient(#efefef 1.1px, transparent 1.1px), linear-gradient(to right, #f3f3f3 1.1px, #fff 1.1px);
   background-size: 150px 150px;
+  overflow-x: hidden;
 }
 
 /* Navbar */
 .topnav {
-  overflow: hidden;
+  overflow: auto;
   background-color: transparent;
   /* padding: 0px 25px; */
+  min-height: 200px;
 }
 
 .nav-brand {
-    font-weight: 600 !important;
-    font-size: 1.55rem !important;
+  font-weight: 600 !important;
+  font-size: 1.55rem !important;
 }
 
 .topnav a {
   float: left;
   display: block;
   color: #0d0d0d;
-  text-align: center;
   padding: 10px 16px;
   text-decoration: none;
 }
 
 .nav-link {
-    margin-top: 8px !important;
-    font-size: .9rem;
+  margin-top: 8px !important;
+  font-size: .9rem;
 }
 
 .topnav .icon {
@@ -66,7 +67,7 @@ body {
 
 /* Hero */
 .hero {
-  margin-top: 20vh;
+  margin-top: 1vh;
   text-align: center !important;
 }
 .hero-main-text {
@@ -96,7 +97,7 @@ body {
 
 /* workarea */
 .workarea{
-  margin-top: 4.5rem;
+  margin-top: -6rem;
 }
 .text-center{
   text-align: center;

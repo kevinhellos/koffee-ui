@@ -1,6 +1,6 @@
 /* 
  * Koffee UI
- * Version: 0.5.1
+ * Version: 0.5.15
  */
 
 /* 
@@ -54,6 +54,9 @@ p, div, span, label, input {
     font-size: .85rem !important;
     /* box-shadow: var(--bs) !important; */
 }
+.btn-sm {
+    padding: .55rem .6rem;
+}
 .btn-plain {
     color: var(--black);
     background-color: var(--default);
@@ -106,6 +109,7 @@ p, div, span, label, input {
 /* Underline style in links are removed by default */
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 /* Cursor */
 .cursor-pointer {
@@ -125,10 +129,19 @@ a {
 .text-center {
     text-align: center;
 }
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/* This probably needs some work :) */
 .mx-auto{
     margin-left: auto !important;
     margin-right: auto !important;
     display: block !important;
+    text-align: center;
+    justify-content: center;
 }
 /* Display */
 .flex {
@@ -198,6 +211,8 @@ a {
     margin-left: auto;
     margin-right: auto; */
     box-shadow: var(--bs) !important;
+    width: 100%;
+    box-sizing: border-box;
 }
 input::placeholder{
     color: var(--border);
@@ -299,14 +314,17 @@ input::placeholder{
   cursor: pointer;
 }
 .popper-content {
+  position: absolute; 
   border: 1px solid var(--border);
   display: none;
   background-color: #fff;
-  padding: .12rem 1.15rem;
+  padding: .12rem 95rem;
   /* z-index: 1; */
   text-align: left;
   width: fit-content;
   border-radius: var(--radiusdefault);
+  overflow: auto;
+  box-shadow: var(--bs) !important;
 }
 .popper:hover .popper-content {
   display: block;
@@ -370,14 +388,26 @@ dialog {
 }
 
 /* Table */
+/* Table by default have a border */
 .table {
   border-collapse: collapse;
   width: 100%;
-  box-shadow: var(--bs);
+  /* box-shadow: var(--bs); */
+  background-color: var(--white);
+  border: 1px solid var(--border);
+}
+
+/* To remove the default border, apply a .table-borderless class */
+.table-borderless {
+    border: none !important;
+}
+.table tr:hover {
+    background-color: var(--default);
 }
 .table tr, th {
     border-top: 1px solid var(--border);
     font-weight: 600;
+
 }
 .table tr, td {
     font-weight: 400;
@@ -386,7 +416,8 @@ dialog {
   /* border: 1px solid var(--border); */
   /* text-align: left; */
   padding: 8px;
+  padding: .82rem 1.25rem;
 }
 .table tr:nth-child(even) {
-  background-color: var(--default);
+  background-color: var(--default) !important;
 }

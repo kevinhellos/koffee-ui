@@ -10,9 +10,19 @@ const Navbar = () => {
             koffee ui 
           </Link>
 
-          <Link className="nav-link" to="/components">
-            Components
-          </Link>
+          <a className="nav-link">
+          <div className="popper">
+          <span>Explore</span>
+          <div className="popper-content" style={{padding: "3px 5px"}}>
+            <a href="/components" className="text-left">
+              Components
+            </a>
+            <a href="/utilities" className="text-left">
+              Utilities
+            </a>
+          </div>
+        </div>
+          </a>
 
           <Link className="nav-link" to="/release">
             Release
