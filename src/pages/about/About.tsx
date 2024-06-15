@@ -2,6 +2,7 @@ const About = () => {
 
   enum Role {
     creator = "Creator",
+    contributor = "Contributor",
     maintainer=  "Maintainer",
   }
 
@@ -10,9 +11,13 @@ const About = () => {
       photoUrl: "https://avatars.githubusercontent.com/u/126497052",
       username: "kevinhellos",
       role: Role.creator
+    },
+    {
+      photoUrl: "https://avatars.githubusercontent.com/u/135241537?v=4",
+      username: "DameHetfield9803",
+      role: Role.contributor
     }
-  ]
-
+  ];
 
   return (
     <>
@@ -31,7 +36,7 @@ const About = () => {
       <div className="hero-sub-text text-center">
 
         {contributors.map((person, index) => (
-          <div className="popper" key={index}>
+          <div className="popper" key={index} style={{marginLeft: 10, marginRight: 10}}>
             <img 
               src={person.photoUrl}
               width={55}
@@ -44,9 +49,10 @@ const About = () => {
                   Creator
                 </div>
               }
-              {person.role == "Maintainer" &&
+              {person.role == "Maintainer" || person.role == "Contributor" &&
                 <div className="chip chip-default chip-sm" style={{marginBottom:"5px"}}>
-                  Maintainer
+                  {person.role == String(Role.contributor) && "Contributor"}
+                  {person.role == String(Role.maintainer) && "Maintainer"}
                 </div>
               }
               <a className="hover-link text-black" href={`https://github.com/${person.username}`} target="_blank">

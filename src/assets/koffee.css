@@ -460,7 +460,6 @@ dialog {
   background-color: var(--white);
   border: 1px solid var(--border);
 }
-
 /* To remove the default border, apply a .table-borderless class */
 .table-borderless {
     border: none;
