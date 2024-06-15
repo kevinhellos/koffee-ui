@@ -10,20 +10,24 @@ const Navbar = () => {
             koffee ui 
           </Link>
 
-          <a className="nav-link">
-          <div className="popper">
-          <span>Explore</span>
-          <div className="popper-content" style={{padding: "3px 5px"}}>
-            <a href="/explore/components" className="text-left hover-link">
-              Components
-            </a>
-            <a href="/explore/utilities" className="text-left">
-              <span className="hover-link">Utilities</span>
-              <span className="chip chip-black chip-sm">new</span>
-            </a>
+          {/* 
+            Use a div instead of an a tag to fix:
+            @react-refresh:267 Warning: validateDOMNesting(...): <a> cannot appear as a descendant of <a>.
+          */}
+          <div className="nav-link">
+            <div className="popper">
+            <span>Explore</span>
+            <div className="popper-content" style={{padding: "3px 5px"}}>
+              <a href="/explore/components" className="text-left hover-link">
+                Components
+              </a>
+              <a href="/explore/utilities" className="text-left">
+                <span className="hover-link">Utilities</span>
+                <span className="chip chip-black chip-sm">new</span>
+              </a>
+            </div>
+            </div>
           </div>
-        </div>
-          </a>
 
           <Link className="nav-link" to="/release">
             Release

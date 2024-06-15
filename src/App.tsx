@@ -7,19 +7,9 @@ import Navbar from "./Navbar";
 import NotFound from "./pages/not-found/NotFound";
 import Utilities from "./pages/utilities/Utilities";
 import Container from "./pages/sandbox/Container";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const App = () => {
-
-  // Push user to the new site
-  useEffect(() => {
-    if (location.origin !== "https://koffee.kevin.com.se/") {
-      // Prevent redirecting to the new site if running locally
-      if(!location.host.includes("localhost")){
-        window.location.href = "https://koffee.kevin.com.se/";
-      }
-    }
-  }, []);
 
   return (
     <>
