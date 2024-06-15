@@ -14,11 +14,12 @@ const Navbar = () => {
           <div className="popper">
           <span>Explore</span>
           <div className="popper-content" style={{padding: "3px 5px"}}>
-            <a href="/components" className="text-left hover-link">
+            <a href="/explore/components" className="text-left hover-link">
               Components
             </a>
-            <a href="/utilities" className="text-left hover-link">
-              Utilities
+            <a href="/explore/utilities" className="text-left">
+              <span className="hover-link">Utilities</span>
+              <span className="chip chip-black chip-sm">new</span>
             </a>
           </div>
         </div>
@@ -37,9 +38,15 @@ const Navbar = () => {
             onClick={() => setNavbarIsOpen(!navbarIsOpen)}
             className="btn btn-plain icon">
             {navbarIsOpen ? (
-              <i className="fas fa-xmark"></i>
+              <>
+                <i className="fas fa-xmark" style={{marginRight: 5}}></i>
+                <span className="btn-font">Close</span>
+              </>
             ):(
-              <i className="fas fa-bars" />
+              <>
+                <i className="fas fa-bars" style={{marginRight: 5}}></i>
+                <span className="btn-font">Menu</span>
+              </>
             )}
           </a>
           

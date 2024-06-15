@@ -22,11 +22,11 @@ const App = () => {
             <Landing />
           </Route>
 
-          <Route exact path={"/components"}>
+          <Route exact path={"/explore/components"}>
             <Components />
           </Route>
 
-          <Route exact path={"/utilities"}>
+          <Route exact path={"/explore/utilities"}>
             <Utilities />
           </Route>
 

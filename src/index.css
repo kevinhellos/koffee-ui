@@ -21,6 +21,20 @@ body {
   min-height: 200px;
 }
 
+.responsive {
+  background-color: #fff;
+  border-radius: .375rem;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px; */
+}
+
+@media only screen and (min-width: 600px) {
+  .responsive {
+    /* background-color: red !important; */
+    background-color: transparent;
+    min-height: 200px;
+  }
+}
+
 .nav-brand {
   font-weight: 600 !important;
   font-size: 1.55rem !important;
