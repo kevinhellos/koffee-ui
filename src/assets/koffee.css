@@ -53,10 +53,10 @@ h1, h1, h3, h4, h5, h6 {
 /* Container */
 .container {
     /* 
-        IMPORTANT !!!
-        width: 100% is removed, as it will cause
-        content to overflow outside of screen viewport,
-        in x direction.
+    IMPORTANT !!!
+    width: 100% is removed, as it will cause
+    content to overflow outside of screen viewport,
+    in x direction.
     */
     /* width: 100%; */
     padding-left: 1.375rem;
@@ -81,6 +81,9 @@ h1, h1, h3, h4, h5, h6 {
     font-size: .85rem;
     /* box-shadow: var(--bs) !important; */
 }
+/* 
+ * This is used together with the .btn class
+ */
 .btn-sm {
     font-size: .8rem;
     padding: .55rem .75rem;
