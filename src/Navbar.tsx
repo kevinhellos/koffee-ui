@@ -10,11 +10,7 @@ const Navbar = () => {
             koffee ui 
           </Link>
 
-          {/* 
-            Use a div instead of an a tag to fix:
-            @react-refresh:267 Warning: validateDOMNesting(...): <a> cannot appear as a descendant of <a>.
-          */}
-          <div className="nav-link">
+          <a className="nav-link">
             <div className="popper">
             <span>Explore</span>
             <div className="popper-content" style={{padding: "3px 5px"}}>
@@ -27,7 +23,7 @@ const Navbar = () => {
               </a>
             </div>
             </div>
-          </div>
+          </a>
 
           <Link className="nav-link" to="/release">
             Release
