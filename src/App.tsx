@@ -14,7 +14,10 @@ const App = () => {
   // Push user to the new site
   useEffect(() => {
     if (location.origin !== "https://koffee.kevin.com.se/") {
-      window.location.href = "https://koffee.kevin.com.se/";
+      // Prevent redirecting to the new site if running locally
+      if(!location.host.includes("localhost")){
+        window.location.href = "https://koffee.kevin.com.se/";
+      }
     }
   }, []);
 
