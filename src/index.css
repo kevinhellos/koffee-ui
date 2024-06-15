@@ -10,7 +10,7 @@ body {
   background-color: #fff;
   background-image:  linear-gradient(#efefef 1.1px, transparent 1.1px), linear-gradient(to right, #f3f3f3 1.1px, #fff 1.1px);
   background-size: 150px 150px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* Navbar */

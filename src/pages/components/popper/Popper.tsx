@@ -6,7 +6,7 @@ const Popper = () => {
         <div className="popper">
           <span>Hover mouse here</span>
           <div className="popper-content">
-            <p>Hello World!</p>
+            Hello World
           </div>
         </div>
       </div>

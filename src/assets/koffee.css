@@ -23,6 +23,9 @@
 
     /* Border radius */
     --radiusdefault: .395rem;
+
+    /* Padding */
+    --paddingdefault: .77rem 1.22rem;
 }
 
 body {
@@ -80,6 +83,7 @@ p, div, span, label, input {
     background-color: #e0e0e0;
 }
 .btn-black {
+    border: 1px solid var(--black);
     background-color: var(--black);
     color: var(--white);
 }
@@ -180,7 +184,7 @@ a {
 /* Bar */
 .bar {
     border: 1px solid var(--border);
-    padding: 1rem;
+    padding: .77rem 1.22rem;
     border-radius: var(--radiusdefault);
     text-align: left;
     margin-top: 5px;
@@ -202,7 +206,7 @@ a {
 
 /* Input */
 .input {
-    padding: .82rem 1.25rem;
+    padding: .77rem 1.22rem;
     border-radius: var(--radiusdefault);
     text-align: left;
     margin-top: 5px;
@@ -281,7 +285,7 @@ input::placeholder{
 /* File */
 .file {
     border: 1px dashed #d5d5d5;
-    padding: 12px 0px;
+    padding: .77rem .005rem;
     width: 130px;
     box-shadow: var(--bs) !important;
     cursor: pointer !important;
@@ -299,8 +303,9 @@ input::placeholder{
 .file-prompt {
     font-weight: 400;
     cursor: pointer !important;
+    padding: 10px 27px;
     /* border: 1px solid red; */
-    padding: 10px 25px;
+    font-size: .9rem;
 }
 .file:hover {
     cursor: pointer !important;
@@ -318,7 +323,7 @@ input::placeholder{
   border: 1px solid var(--border);
   display: none;
   background-color: #fff;
-  padding: .12rem 95rem;
+  padding: .77rem 1.22rem;
   /* z-index: 1; */
   text-align: left;
   width: fit-content;
@@ -374,7 +379,7 @@ dialog {
     margin: 0px !important;
     padding: 8px 11px;
     border-radius: 0px;
-    border-right: .35px solid var(--border);
+    border-right: .1px solid var(--border);
     font-size: .83rem !important;
 }
 .pagination .btn:first-child{
@@ -399,7 +404,7 @@ dialog {
 
 /* To remove the default border, apply a .table-borderless class */
 .table-borderless {
-    border: none !important;
+    border: none;
 }
 .table tr:hover {
     background-color: var(--default);
@@ -416,7 +421,7 @@ dialog {
   /* border: 1px solid var(--border); */
   /* text-align: left; */
   padding: 8px;
-  padding: .82rem 1.25rem;
+  padding: .77rem 1.22rem;
 }
 .table tr:nth-child(even) {
   background-color: var(--default) !important;
