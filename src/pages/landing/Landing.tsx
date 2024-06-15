@@ -11,7 +11,7 @@ const Landing = () => {
           Pre made styleable components built with standard HTML <br />
         </p>
         <div className="hero-cta">
-          <Link to="/components" className="btn btn-black btn-font">
+          <Link to="/explore/components" className="btn btn-black btn-font">
             Browse components
           </Link>
           <a className="btn btn-default btn-font" href="https://github.com/kevinhellos/koffee-ui">
