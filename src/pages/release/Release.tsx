@@ -1,4 +1,12 @@
 const Release = () => {
+
+  const containerStyle = {
+    marginLeft: "auto",
+    marginRight: "auto",
+    display: "block",
+    width: "400px",
+  };
+
   return (
     <>
       <div className="workarea">
@@ -10,14 +18,7 @@ const Release = () => {
           documented here.
         </p>
 
-        <div
-          style={{
-            marginLeft: "auto",
-            marginRight: "auto",
-            display: "block",
-            width: "400px",
-          }}
-        >
+        <div style={containerStyle}>
 
           <div className="bar bar-default" style={{ padding: "10px 15px", marginTop: "15px" }}>
             <div style={{ marginTop: "15px" }}>
