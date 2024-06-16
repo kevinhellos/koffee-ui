@@ -10,6 +10,9 @@ import Popper from "./popper/Popper";
 import Radio from "./radio/Radio";
 import Bar from "./bar/Bar";
 import Table from "./table/Table";
+import Tab from "./tab/Tab";
+import Accordion from "./accordion/Accordion";
+import Toast from "./toast/Toast";
 
 const Components = () => {
 
@@ -28,8 +31,11 @@ const Components = () => {
 
         <div className="component-preview">
 
-          {/* Text */}
-          <Text/>
+          {/* Accordion */}
+          <Accordion/>
+
+          {/* Toast */}
+          <Toast/>
 
           {/* Button */}
           <Button/>
@@ -43,14 +49,17 @@ const Components = () => {
           {/* Dialog */}
           <Dialog/>
 
+          {/* Tab */}
+          <Tab/>
+
           {/* File upload */}
           <FileUpload/>
 
-          {/* Input */}
-          <Input/>
-
           {/* Pagination */}
           <Pagination/>
+
+          {/* Input */}
+          <Input/>
 
           {/* Popper */}
           <Popper/>
@@ -63,6 +72,9 @@ const Components = () => {
 
           {/* Table */}
           <Table/>
+
+          {/* Text */}
+          <Text/>
 
         </div>
       </div>

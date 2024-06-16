@@ -13,15 +13,19 @@ const Navbar = () => {
           <a className="nav-link">
             <div className="popper">
             <span>Explore</span>
-            <div className="popper-content" style={{padding: "3px 5px"}}>
-              <a href="/explore/components" className="text-left hover-link">
-                Components
-              </a>
-              <a href="/explore/utilities" className="text-left">
-                <span className="hover-link">Utilities</span>
-                <span className="chip chip-black chip-sm">new</span>
-              </a>
-            </div>
+              <div className="popper-content" style={{padding: "3px 5px"}}>
+                <a href="/explore/components" className="text-left hover-link">
+                  Components
+                </a>
+                <a href="/explore/utilities" className="text-left">
+                  <span className="hover-link">Utilities</span>
+                  {/* <span className="chip chip-default chip-sm">new</span> */}
+                </a>
+                <a href="/explore/docs" className="text-left">
+                  <span className="hover-link">Docs</span>
+                  <span className="chip chip-default chip-sm">new</span>
+                </a>
+              </div>
             </div>
           </a>
 

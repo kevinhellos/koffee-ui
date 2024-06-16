@@ -1,6 +1,6 @@
 /* 
  * Koffee UI
- * Version: 0.5.2
+ * Version: 0.5.3
  * https://koffee.kevin.com.se
  * https://github.com/kevinhellos/koffee-ui
  */
@@ -186,20 +186,20 @@ a {
 }
 /* Floats */
 .float-left {
-    float: left;
+    float: left !important;
 }
 .float-right {
-    float: right;
+    float: right !important;
 }
 /* Text */
 .text-center {
-    text-align: center;
+    text-align: center !important;
 }
 .text-left {
-    text-align: left;
+    text-align: left !important;
 }
 .text-right {
-    text-align: right;
+    text-align: right !important;
 }
 /* This probably needs some work :) */
 .mx-auto{
@@ -271,6 +271,14 @@ a {
 }
 
 /* Input */
+/* Reset default browser styling */
+.input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    background: none;
+}
 .input {
     padding: .77rem 1.22rem;
     border-radius: var(--radiusdefault);
@@ -290,6 +298,9 @@ input::placeholder{
 .input-default{
     border: 1px solid var(--border);
 }
+.input-default:focus {
+    border: 1.5px solid var(--black);
+}
 .input-danger{
     border: 1px solid var(--danger);
     color: var(--danger);
@@ -301,7 +312,10 @@ input::placeholder{
     border-bottom: 1px solid var(--border);
     border-radius: 0px;
 }
-
+.input-clear:focus{
+    border-bottom: 1.5px solid var(--black);
+    transition: .1s ease;
+}
 /* Radio */
 .radio div {
   display: block;
@@ -344,7 +358,7 @@ input::placeholder{
   padding: .77rem 1.22rem;
   border: 1px solid var(--border);
   color: var(--black);
-  transition: background-color .3s ease;
+  transition: background-color .2.5s ease;
   border-radius: .395rem !important;
 }
 
@@ -489,4 +503,93 @@ dialog {
 }
 .table tr:nth-child(even) {
   background-color: var(--default) !important;
+}
+
+/* Tab */
+.tab {
+    border: 1px solid var(--border);
+    border-radius: var(--radiusdefault);
+    padding: .75rem .02rem;
+    box-shadow: var(--bs);
+    text-align: left;
+    background-color: var(--default);
+    flex-wrap: wrap;
+    width: fit-content;
+}
+.tab a {
+    color: var(--black);
+    padding: .5rem 1.22rem !important;
+    margin: 0 2px !important;
+    word-wrap: break-word !important;
+    border-radius: var(--radiusdefault) !important;
+    transition: .1s ease;
+}
+.tab a:hover:not(.active) {
+    background-color: var(--border) !important;
+    border-radius: var(--radiusdefault) !important;
+}
+.tab .active {
+    border: .5px solid var(--border);
+    border-radius: var(--radiusdefault) !important;
+    padding: .6rem 1.22rem !important;
+    background-color: var(--white) !important;
+    margin: 0 2px !important;
+    color: var(--black) !important;
+    box-shadow: var(--bs);
+}
+
+/* Accordion */
+.accordion {
+  background-color: var(--white);
+  cursor: pointer;
+  padding: var(--paddingdefault);
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--border);
+  outline: none;
+  transition: .25s ease !important;
+  box-shadow: var(--bs);
+  border-bottom: 1px solid var(--border);
+  margin-top: -1px;
+  transition: .1s ease;
+}
+.accordion-active, .accordion:hover {
+  transition: .1s ease;
+  border-left: 3px solid var(--black);
+}
+.accordion-item {
+  margin-top: -1px;
+  padding: var(--paddingdefault);
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+  border: 1px solid var(--border);
+  transition: .1s ease;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character: "plus" sign (+) */
+  font-size: .85rem;
+  float: right;
+}
+.accordion-active:after {
+  content: "\2796"; /* Unicode character: "minus" sign (-) */
+}
+
+/* Toast */
+.toast {
+    border: 1px solid var(--border);
+    padding: var(--paddingdefault);
+    border-radius: var(--radiusdefault);
+    text-align: left;
+    box-shadow: var(--bs);
+    overflow: auto;
+}
+.toast-title {
+    font-weight: 600;
+    margin-top: 5px !important;
+    margin-bottom: 5px;
+}
+.toast-body {
+    margin-bottom: 10px;
 }

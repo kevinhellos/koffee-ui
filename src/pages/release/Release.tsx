@@ -20,12 +20,25 @@ const Release = () => {
 
         <div style={containerStyle}>
 
+        <div className="bar bar-default" style={{ padding: "10px 15px", marginTop: "15px" }}>
+            <div style={{ marginTop: "15px" }}>
+              <span className="chip chip-black">v 0.5.3</span>
+            </div>
+            <div style={{ marginTop: "20px" }}>
+              <span className="chip chip-default chip-sm">Latest</span>
+            </div>
+            <div style={{ marginTop: "15px" }}>
+              <small>Released on June 15 2024</small>
+            </div>
+            <p>Components added: tab, accordion, toast</p>
+          </div>
+
           <div className="bar bar-default" style={{ padding: "10px 15px", marginTop: "15px" }}>
             <div style={{ marginTop: "15px" }}>
               <span className="chip chip-black">v 0.5.2</span>
             </div>
             <div style={{ marginTop: "20px" }}>
-              <span className="chip chip-default chip-sm">Latest</span>
+              <span className="chip chip-danger chip-sm">Deprecated</span>
             </div>
             <div style={{ marginTop: "15px" }}>
               <small>Released on June 15 2024</small>

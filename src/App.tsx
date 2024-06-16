@@ -3,7 +3,7 @@ import Landing from "./pages/landing/Landing";
 import Components from "./pages/components/Components";
 import About from "./pages/about/About";
 import Release from "./pages/release/Release";
-import Navbar from "./Navbar";
+import Navbar from "./shared/Navbar";
 import NotFound from "./pages/not-found/NotFound";
 import Utilities from "./pages/utilities/Utilities";
 import Container from "./pages/sandbox/Container";
