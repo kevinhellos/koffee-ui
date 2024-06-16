@@ -22,7 +22,7 @@ const Components = () => {
         <h1 style={{ fontWeight: 500 }} className="text-center">Components</h1>
         <div className="text-center">
           <span className="chip chip-default">
-            12 ready to use pre built components
+            15 ready to use pre built components
           </span>
         </div>
         {/* <p className="hero-sub-text text-center">
