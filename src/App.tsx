@@ -7,9 +7,22 @@ import Navbar from "./shared/Navbar";
 import NotFound from "./pages/not-found/NotFound";
 import Utilities from "./pages/utilities/Utilities";
 import Container from "./pages/sandbox/Container";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 
 const App = () => {
+
+  useEffect(() => {
+    const currentSiteUrl = location.origin;
+    if (currentSiteUrl !== "http://localhost:5173") {
+      if (currentSiteUrl !== "https://koffee.kevin.com.se") {
+        console.log("Redirecting to new website...");
+        window.location.href = "https://koffee.kevin.com.se";
+      }
+    }
+    else {
+      console.log(`Environment: local @ ${currentSiteUrl}`);
+    }
+  });
 
   return (
     <>
