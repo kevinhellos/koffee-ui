@@ -22,16 +22,6 @@ const Release = () => {
 
           <div className="bar bar-default" style={{ padding: "10px 15px", marginTop: "15px" }}>
             <div style={{ marginTop: "15px" }}>
-              <span className="chip chip-default">Future update</span>
-            </div>
-            <div style={{ marginTop: "15px" }}>
-              <small>Coming soon</small>
-            </div>
-            <p><code>koffee.js</code></p>
-          </div>
-
-          <div className="bar bar-default" style={{ padding: "10px 15px", marginTop: "15px" }}>
-            <div style={{ marginTop: "15px" }}>
               <span className="chip chip-black">v 0.5.2</span>
             </div>
             <div style={{ marginTop: "20px" }}>

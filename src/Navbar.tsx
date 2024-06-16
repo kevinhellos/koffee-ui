@@ -27,7 +27,7 @@ const Navbar = () => {
 
           <Link className="nav-link" to="/release">
             Release
-            <span className="chip chip-black chip-sm">new</span>
+            <span className="chip chip-default chip-sm">new</span>
           </Link>
 
           <Link className="nav-link" to="/about">

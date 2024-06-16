@@ -1,4 +1,14 @@
+import { Link } from "react-router-dom";
+
 const Utilities = () => {
+
+  const containerStyle = {
+    marginLeft: "auto",
+    marginRight: "auto",
+    display: "block",
+    maxWidth: "800px",
+  };
+
   return (
     <>
       <div className="workarea">
@@ -12,14 +22,7 @@ const Utilities = () => {
           set of utilities classes for that.
         </p>
 
-        <div
-          style={{
-            marginLeft: "auto",
-            marginRight: "auto",
-            display: "block",
-            maxWidth: "800px",
-          }}
-        >
+        <div style={containerStyle}>
 
           <h3 style={{fontWeight: 500, marginTop: 25}}>Border radius</h3>
           <table className="table">
@@ -28,9 +31,15 @@ const Utilities = () => {
               <th>Description</th>
             </tr>
             <tr className="text-center">
+              <td>.rounded</td>
+              <td>
+                Apply a default border radius to en element. (.395rem).
+              </td>
+            </tr>
+            <tr className="text-center">
               <td>.rounded-max</td>
               <td>
-                Apply a border radius of 10 rem. Very rounded
+                Apply a border radius of 10 rem. Very rounded.
               </td>
             </tr>
           </table>
@@ -39,9 +48,9 @@ const Utilities = () => {
             Container
           </h3>
           <div style={{marginLeft: "-5px", marginBottom: "20px"}}>
-            <a href="/sandbox/container" className="btn btn-black btn-sm btn-font">
+            <Link to="/sandbox/container" className="btn btn-black btn-sm btn-font">
               View demo
-            </a>
+            </Link>
           </div>
           <table className="table">
             <tr>
@@ -125,13 +134,13 @@ const Utilities = () => {
             <tr className="text-center">
               <td>.flex</td>
               <td>
-                Flex components to be in a single 
+                Flex components to be in a single row
               </td>
             </tr>
             <tr className="text-center">
               <td>.block</td>
               <td>
-                Force components display: block;
+                Force components displayed as block element
               </td>
             </tr>
           </table>

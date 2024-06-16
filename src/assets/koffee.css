@@ -146,6 +146,9 @@ Usage:
 
 /* Utilities */
 /* Rounded */
+.rounded {
+    border-radius: var(--radiusdefault) !important;
+}
 .rounded-max {
     border-radius: 10rem;
 }
@@ -482,7 +485,6 @@ dialog {
 .table td, th {
   /* border: 1px solid var(--border); */
   /* text-align: left; */
-  padding: 8px;
   padding: .77rem 1.22rem;
 }
 .table tr:nth-child(even) {

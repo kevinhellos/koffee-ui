@@ -6,7 +6,13 @@ const About = () => {
     maintainer=  "Maintainer",
   }
 
-  const contributors = [
+  interface Contributor {
+    photoUrl: string;
+    username: string;
+    role: Role;
+  }
+
+  const contributors: Contributor[] = [
     {
       photoUrl: "https://avatars.githubusercontent.com/u/126497052",
       username: "kevinhellos",
