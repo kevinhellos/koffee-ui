@@ -34,8 +34,8 @@ const Components = () => {
           {/* Accordion */}
           <Accordion/>
 
-          {/* Toast */}
-          <Toast/>
+          {/* Bar */}
+          <Bar/>
 
           {/* Button */}
           <Button/>
@@ -49,17 +49,14 @@ const Components = () => {
           {/* Dialog */}
           <Dialog/>
 
-          {/* Tab */}
-          <Tab/>
-
           {/* File upload */}
           <FileUpload/>
 
-          {/* Pagination */}
-          <Pagination/>
-
           {/* Input */}
           <Input/>
+
+          {/* Pagination */}
+          <Pagination/>
 
           {/* Popper */}
           <Popper/>
@@ -67,14 +64,17 @@ const Components = () => {
           {/* Radio */}
           <Radio/>
 
-          {/* Bar */}
-          <Bar/>
+          {/* Tab */}
+          <Tab/>
 
           {/* Table */}
           <Table/>
 
           {/* Text */}
           <Text/>
+
+          {/* Toast */}
+          <Toast/>
 
         </div>
       </div>
