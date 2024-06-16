@@ -21,7 +21,7 @@ const Navbar = () => {
                   <span className="hover-link">Utilities</span>
                   {/* <span className="chip chip-default chip-sm">new</span> */}
                 </a>
-                <a href="/explore/docs" className="text-left">
+                <a href="https://koffee-docs.kevin.com.se/" target="_blank" className="text-left">
                   <span className="hover-link">Docs</span>
                   <span className="chip chip-default chip-sm">new</span>
                 </a>
