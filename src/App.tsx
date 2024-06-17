@@ -15,10 +15,10 @@ const App = () => {
   useEffect(() => {
     const currentSiteUrl = location.origin;
     if (currentSiteUrl !== "http://localhost:5173") {
-      // if (currentSiteUrl !== "https://koffee.kevin.com.se") {
-      //   console.log("Redirecting to new website...");
-      //   window.location.href = "https://koffee.kevin.com.se";
-      // }
+      if (currentSiteUrl !== "https://koffee.kevin.com.se") {
+        console.log("Redirecting to new website...");
+        window.location.href = "https://koffee.kevin.com.se";
+      }
     }
     else {
       console.log(`Environment: local @ ${currentSiteUrl}`);
