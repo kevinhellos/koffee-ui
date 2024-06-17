@@ -553,6 +553,7 @@ dialog {
   margin-top: -1px;
   transition: .1s ease;
   font-size: .9rem;
+  color: #000;
 }
 .accordion-active, .accordion:hover {
   transition: .1s ease;
