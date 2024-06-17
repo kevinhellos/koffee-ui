@@ -552,6 +552,7 @@ dialog {
   border-bottom: 1px solid var(--border);
   margin-top: -1px;
   transition: .1s ease;
+  font-size: .9rem;
 }
 .accordion-active, .accordion:hover {
   transition: .1s ease;
