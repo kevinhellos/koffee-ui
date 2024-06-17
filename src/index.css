@@ -127,6 +127,7 @@ body {
   margin: 0 auto;
   display: grid;
   gap: 1rem;
+  overflow: auto;
 }
 .component-preview-card-title {
   font-size: 1.25rem !important;

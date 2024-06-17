@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Release = () => {
 
   const containerStyle = {
@@ -18,9 +20,14 @@ const Release = () => {
           documented here.
         </p>
 
+        <div className="tab mx-auto">
+            <Link className="active" to="/release">Releases</Link>
+            <Link to="/updates">Updates</Link>
+        </div>
+
         <div style={containerStyle}>
 
-        <div className="bar bar-default" style={{ padding: "10px 15px", marginTop: "15px" }}>
+        <div className="bar bar-default shadow" style={{ padding: "10px 15px", marginTop: "15px" }}>
             <div style={{ marginTop: "15px" }}>
               <span className="chip chip-black">v 0.5.3</span>
             </div>
@@ -28,12 +35,12 @@ const Release = () => {
               <span className="chip chip-default chip-sm">Latest</span>
             </div>
             <div style={{ marginTop: "15px" }}>
-              <small>Released on June 15 2024</small>
+              <small>Released on June 17 2024</small>
             </div>
             <p>Components added: tab, accordion, toast</p>
           </div>
 
-          <div className="bar bar-default" style={{ padding: "10px 15px", marginTop: "15px" }}>
+          <div className="bar bar-default shadow" style={{ padding: "10px 15px", marginTop: "15px" }}>
             <div style={{ marginTop: "15px" }}>
               <span className="chip chip-black">v 0.5.2</span>
             </div>
@@ -47,7 +54,7 @@ const Release = () => {
           </div>
 
           <div
-            className="bar bar-default"
+            className="bar bar-default shadow"
             style={{ padding: "10px 15px", marginTop: "15px" }}
           >
             <div style={{ marginTop: "10px" }}>
@@ -63,7 +70,7 @@ const Release = () => {
           </div>
 
           <div
-            className="bar bar-default"
+            className="bar bar-default shadow"
             style={{ padding: "10px 15px", marginTop: "15px" }}
           >
             <div style={{ marginTop: "10px" }}>

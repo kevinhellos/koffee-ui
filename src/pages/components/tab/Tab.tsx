@@ -28,14 +28,14 @@ const Tab = () => {
       <div style={{ marginTop: 35 }}>
         <div className="tab mx-auto">
             {tabItems.map((tab, index) => (
-                <a 
-                    className={`${selectedTab == index+1 ? "active" :""}`}
-                    key={index}
-                    onClick={() => setSelectedTab(index+1)}
-                    role="tab"
-                    >
-                    {`Item ${tab.id}`}
-                </a>
+              <a 
+                  className={`${selectedTab == index+1 ? "active" :""}`}
+                  key={index}
+                  onClick={() => setSelectedTab(index+1)}
+                  role="tab"
+                  >
+                  {`Item ${tab.id}`}
+              </a>
             ))}
         </div>
       </div>

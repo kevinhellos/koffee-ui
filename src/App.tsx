@@ -8,6 +8,7 @@ import NotFound from "./pages/not-found/NotFound";
 import Utilities from "./pages/utilities/Utilities";
 import Container from "./pages/sandbox/Container";
 import { useEffect } from "react";
+import Updates from "./pages/release/Updates";
 
 const App = () => {
 
@@ -46,6 +47,10 @@ const App = () => {
 
           <Route exact path={"/release"}>
             <Release />
+          </Route>
+
+          <Route exact path={"/updates"}>
+            <Updates />
           </Route>
           
           <Route exact path={"/about"}>

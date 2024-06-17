@@ -79,6 +79,10 @@ h1, h1, h3, h4, h5, h6 {
     margin-left: 5px;
     margin-right: 5px;
     font-size: .85rem;
+    /* 
+        Buttons do not have a box shadow by default
+        add the .shadow class to give it the default box shadow
+    */
     /* box-shadow: var(--bs) !important; */
 }
 /* 
@@ -174,7 +178,7 @@ a {
 /* Shadow */
 /* The default shadow used for components */
 .shadow {
-    box-shadow: var(--bs);
+    box-shadow: var(--bs) !important;
 }
 
 /* Cursor */
@@ -285,9 +289,6 @@ a {
     text-align: left;
     margin-top: 5px;
     margin-bottom: 5px;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
     box-shadow: var(--bs) !important;
     width: 100%;
     box-sizing: border-box;
@@ -384,7 +385,6 @@ input::placeholder{
     font-weight: 400;
     cursor: pointer !important;
     padding: 10px 27px;
-    /* border: 1px solid red; */
     font-size: .9rem;
 }
 .file:hover {
@@ -436,14 +436,12 @@ input::placeholder{
 
 /* Dialog */
 ::backdrop {
-    /* Background blur */
     backdrop-filter: blur(2.5px);
 }
 dialog {
     border: 1px solid var(--border) !important;
     box-shadow: var(--bs);
     border-radius: .575rem;
-    /* padding: 1rem 1.25rem; */
     padding: 25px 35px !important;
     text-align: left;
     max-width: 350px;
@@ -473,33 +471,47 @@ dialog {
 }
 
 /* Table */
+.table-rounded {
+    padding: .3rem .05rem;
+    border: 1px solid var(--border);
+    border-radius: .395rem;
+    box-shadow: var(--bs);
+    background-color: var(--white) !important;
+}
 /* Table by default have a border */
 .table {
   border-collapse: collapse;
   width: 100%;
-  /* box-shadow: var(--bs); */
-  background-color: var(--white);
-  border: 1px solid var(--border);
+  background-color: var(--white) !important;
+  text-align: left;
 }
 /* To remove the default border, apply a .table-borderless class */
 .table-borderless {
     border: none;
 }
-.table tr:hover {
-    background-color: var(--default);
-}
-.table tr, th {
-    border-top: 1px solid var(--border);
+th {
     font-weight: 600;
-
+}
+tr {
+    border-radius: 1rem !important;
+}
+tr:first-child {
+    padding: 10rem !important;
+}
+.table th:first-child {
+    border-top: none !important;
+    border-top-left-radius: .395rem;
+}
+.table th:last-child {
+    border-top: none !important;
+    border-top-right-radius: .395rem;
 }
 .table tr, td {
     font-weight: 400;
 }
 .table td, th {
-  /* border: 1px solid var(--border); */
-  /* text-align: left; */
-  padding: .77rem 1.22rem;
+    padding: .57rem 1.22rem;
+    border-top: 1px solid var(--border);
 }
 .table tr:nth-child(even) {
   background-color: var(--default) !important;
@@ -509,8 +521,8 @@ dialog {
 .tab {
     border: 1px solid var(--border);
     border-radius: var(--radiusdefault);
-    padding: .75rem .02rem;
-    box-shadow: var(--bs);
+    padding: .77rem .02rem;
+    /* box-shadow: var(--bs); */
     text-align: left;
     background-color: var(--default);
     flex-wrap: wrap;
@@ -521,21 +533,21 @@ dialog {
     padding: .5rem 1.22rem !important;
     margin: 0 2px !important;
     word-wrap: break-word !important;
-    border-radius: var(--radiusdefault) !important;
+    border-radius: .275rem !important;
     transition: .1s ease;
 }
 .tab a:hover:not(.active) {
     background-color: var(--border) !important;
-    border-radius: var(--radiusdefault) !important;
+    border-radius: .275rem !important;
 }
 .tab .active {
-    border: .5px solid var(--border);
-    border-radius: var(--radiusdefault) !important;
+    border: .25px solid var(--border);
+    border-radius: .275rem !important;
     padding: .6rem 1.22rem !important;
     background-color: var(--white) !important;
     margin: 0 2px !important;
     color: var(--black) !important;
-    box-shadow: var(--bs);
+    box-shadow: var(--bs) !important;
 }
 
 /* Accordion */

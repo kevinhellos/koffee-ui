@@ -10,6 +10,10 @@ const Navbar = () => {
             koffee ui 
           </Link>
 
+          <a className="nav-link" href="https://koffee-docs.kevin.com.se/" target="_blank">
+            Docs
+          </a>
+
           <a className="nav-link">
             <div className="popper">
             <span>Explore</span>
@@ -20,10 +24,6 @@ const Navbar = () => {
                 <a href="/explore/utilities" className="text-left">
                   <span className="hover-link">Utilities</span>
                   {/* <span className="chip chip-default chip-sm">new</span> */}
-                </a>
-                <a href="https://koffee-docs.kevin.com.se/" target="_blank" className="text-left">
-                  <span className="hover-link">Docs</span>
-                  <span className="chip chip-default chip-sm">new</span>
                 </a>
               </div>
             </div>
