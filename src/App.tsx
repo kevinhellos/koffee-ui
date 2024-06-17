@@ -29,9 +29,9 @@ const App = () => {
     <>
       <Router>
         
-        <div className="bar text-center" style={{backgroundColor: "#f6f6f6"}}>
+        {/* <div className="bar text-center" style={{backgroundColor: "#f6f6f6"}}>
           We will be upgrading the Koffee UI website soon.
-        </div>
+        </div> */}
         <Navbar/>
 
         <Switch>
