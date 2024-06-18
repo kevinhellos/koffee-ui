@@ -107,6 +107,7 @@ h1, h1, h3, h4, h5, h6 {
     background-color: var(--white);
     transition: .25s ease;
     color: var(--black);
+    box-shadow: var(--bs);
 }
 .btn-default:hover {
     background-color: #e9e9e9;
@@ -361,6 +362,7 @@ input::placeholder{
   color: var(--black);
   transition: background-color .2.5s ease;
   border-radius: .395rem !important;
+  box-shadow: var(--bs) !important;
 }
 
 /* File */
@@ -487,7 +489,7 @@ dialog {
 }
 /* To remove the default border, apply a .table-borderless class */
 .table-borderless {
-    border: none;
+    border: none !important;
 }
 th {
     font-weight: 600;
