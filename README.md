@@ -13,4 +13,4 @@ Lightweight UI framework designed to streamline development of modern web interf
 <code>src/assets/<b>koffee.css</b></code>
 
 ## License
-This project is open source and available under the [MIT License](LICENSE.md).
+This project is open source and available under the [MIT License](LICENSE).
