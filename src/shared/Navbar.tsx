@@ -10,9 +10,9 @@ const Navbar = () => {
             koffee ui 
           </Link>
 
-          <a className="nav-link" href="https://koffee-docs.kevin.com.se/" target="_blank">
+          {/* <a className="nav-link" href="https://koffee-docs.kevin.com.se/" target="_blank">
             Docs
-          </a>
+          </a> */}
 
           <a className="nav-link">
             <div className="popper">

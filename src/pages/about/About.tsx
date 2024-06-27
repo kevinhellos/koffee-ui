@@ -17,11 +17,6 @@ const About = () => {
       photoUrl: "https://avatars.githubusercontent.com/u/126497052",
       username: "kevinhellos",
       role: Role.creator
-    },
-    {
-      photoUrl: "https://avatars.githubusercontent.com/u/135241537?v=4",
-      username: "DameHetfield9803",
-      role: Role.contributor
     }
   ];
 
