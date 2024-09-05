@@ -1,7 +1,3 @@
-> [!CAUTION]
-> Koffee UI project will be archived in favour for a new UI library (Koffee UI 2, KU2) which will adopt a similar look and feel.
-> KU2 will be built upon Tailwind CSS instead of a raw CSS.
-
 # koffee-ui
 Lightweight UI framework designed to streamline development of modern web interfaces
 
